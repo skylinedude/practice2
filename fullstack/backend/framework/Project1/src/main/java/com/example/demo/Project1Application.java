@@ -13,8 +13,7 @@ public class Project1Application {
 	public static void main(String[] args) {
 		SpringApplication.run(Project1Application.class, args);
 	}
-	//@Override
-	   public void addResourceHandlers(ResourceHandlerRegistry registry) {
+	public void addResourceHandlers(ResourceHandlerRegistry registry) {
 
 	        // Register resource handler for images
 	        registry.addResourceHandler("/images/**").addResourceLocations("/WEB-INF/images/")
