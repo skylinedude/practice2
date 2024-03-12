@@ -1,10 +1,21 @@
 package packag.projectmongodb2.com;
 
+import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 @Document(collection="forest")
 
 public class ProgramModel {
+	@Id
+	private Integer id;
+	
+	
+	public Integer getId() {
+		return id;
+	}
+	public void setId(Integer id) {
+		this.id = id;
+	}
 	private String forest_name;
 	private String location;
 	private int animal_count;

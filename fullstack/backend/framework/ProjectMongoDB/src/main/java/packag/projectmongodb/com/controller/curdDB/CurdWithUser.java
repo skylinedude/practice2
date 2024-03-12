@@ -10,11 +10,26 @@ import packag.projectmongodb.com.services.UserCurd;
 @RestController
 public class CurdWithUser {
 	@Autowired
-	private UserCurd services;
+	UserCurd services;
 	
 	@GetMapping("/save")
 	public String addUserInfoToDb(UserInfoSchema user) {
 		services.addUser(user);
 		return "added";
+	}
+	@GetMapping("/show")
+	public UserInfoSchema showdata(UserInfoSchema put) {
+		
+		return services.gettingdata(put);
+		
+	}
+	@GetMapping("update")
+	public UserInfoSchema updateData(UserInfoSchema up) {
+		var datas=services.updateData(up);
+		return datas;
+	}
+	@GetMapping("/deleted")
+	public void deleteData(UserInfoSchema dell) {
+		services.deleteData(dell);
 	}
 }
