@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./external.css">
+</head>
+<body>
+    <h1>External CSS</h1>
+    <p>
+        External CSS (Cascading Style Sheets) is a method of styling web pages by linking a separate CSS file to an HTML document. 
+        <br>This approach keeps the style definitions separate from the HTML content, making it easier to manage and maintain the code.
+       <br> Most of the companies use external CSS for the development of their web project. <br>
+        <br>Here's how you can use external CSS in your web development projects: <br>
+        Create a CSS File: <br>
+        Start by creating a separate CSS file with a .css extension. You can name this file anything you like, but it's common <br>
+         to use a name that reflects its purpose, such as styles.css.</p>
+         <pre>
+            <p>inside styles.css file</p>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #f4f4f4;
+              }
+              
+              h1 {
+                color: #333;
+              }
+              
+              .container {
+                width: 80%;
+                margin: 0 auto;
+              }
+         </pre>
+         <p style="color: green; font-size:150%;">Link CSS File to HTML: <br></p>
+         <pre>
+            In your HTML file, use the &lt;link&gt; tag in the &lt;head&gt; section to link the CSS file. <br>
+            &lt;head&gt; 
+            &lt;link rel="stylesheet" href="styles.css"&gt;
+            &lt;/head&gt;    
+         </pre>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Video Example</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    p {
+      margin-bottom: 20px;
+      line-height: 1.6;
+    }
+
+    pre {
+      background-color: #f9f9f9;
+      padding: 10px;
+      border-radius: 4px;
+      overflow-x: auto;
+    }
+
+    video {
+      display: block;
+      margin: 0 auto;
+      width: 100%;
+      max-width: 640px;
+      border-radius: 4px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Video Tag</h1>
+    <p>
+      The &lt;video&gt; tag in HTML is used to embed video content directly into a webpage. It allows you to specify a video file or a video stream to be played within the browser.<br>
+      Here is an example of how you can use the &lt;video&gt; tag:
+    </p>
+    <pre>
+      &lt;video controls width="640" height="360"&gt;
+        &lt;source src="example.mp4" type="video/mp4"&gt;
+      &lt;/video&gt;
+    </pre>
+    <video controls>  
+      <source src="./leomessi.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+</body>
+</html>

@@ -1,0 +1,21 @@
+h1{
+    background-color: aqua;
+}
+p{
+    background-color: rgb(155, 121, 77);
+}
+.div1{
+    background-color:aquamarine;
+    width: 400px;
+    height: 200px;
+}
+.div2{
+    background-color:#c57575;
+    width: 400px;
+    height: 200px;
+}
+.div3{
+    background-color:rgb(36, 125, 95);
+    width: 400px;
+    height: 200px;
+}

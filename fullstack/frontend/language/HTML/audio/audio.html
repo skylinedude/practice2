@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Audio Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      height: 100vh;
+      background-color: #f0f0f0;
+    }
+
+    .container {
+      max-width: 900px;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+      border-bottom: 2px solid #333;
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      color: #666;
+      margin-bottom: 20px;
+    }
+
+    pre {
+      background-color: #f7f7f7;
+      padding: 10px;
+      border-radius: 5px;
+      overflow-x: auto;
+    }
+
+    audio {
+      width: 400px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <h1>Audio Tag</h1>
+    <p>
+      The &lt;audio&gt; tag in HTML is used to embed audio content on a web page. It allows you to play audio files such as MP3, WAV, or OGG directly in the browser without needing a separate plugin.
+      Here's an example of how to use the &lt;audio&gt; tag:
+    </p>
+    <pre class="code">
+      &lt;audio controls&gt;
+        &lt;source src="audio-file.mp3" type="audio/mpeg"&gt;
+        &lt;source src="audio-file.ogg" type="audio/ogg"&gt;
+        Your browser does not support the audio element.
+      &lt;/audio&gt;
+    </pre>
+    <p>
+        1. The &lt;audio&gt; tag is used with the controls attribute, which adds playback controls (play, pause, volume control, etc.) to the audio player. <br>
+        2. Inside the &lt;audio&gt; tag, there is a &lt;source&gt; tag that specifies the audio file (audio-file.mp3) and its MIME type (audio/mpeg for MP3 files). <br>
+        3. The text "Your browser does not support the audio element." is a fallback message that will be displayed if the browser does not support the &lt;audio&gt; tag or the specified audio format.
+      </p>
+      <center>
+        <audio controls>
+            <source src="./audiofile.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
+      </center>
+    
+    
+  </div>
+
+</body>
+
+</html>
