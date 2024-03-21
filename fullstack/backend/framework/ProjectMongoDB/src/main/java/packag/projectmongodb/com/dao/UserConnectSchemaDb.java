@@ -4,6 +4,6 @@ import org.springframework.data.mongodb.repository.MongoRepository;
 
 import packag.projectmongodb.com.model.UserInfoSchema;
 
-public interface UserConnectSchemaDb extends MongoRepository<UserInfoSchema, String> {
+public interface UserConnectSchemaDb extends MongoRepository<UserInfoSchema, Integer> {
 
 }

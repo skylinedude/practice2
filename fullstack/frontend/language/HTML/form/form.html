@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Example Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+.div1{
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px; background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+    .container {
+      max-width: 600px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    form {
+      margin-top: 20px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    input[type="date"],
+    select,
+    textarea {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+    }
+
+    input[type="radio"],
+    input[type="checkbox"] {
+      margin-right: 5px;
+    }
+
+    textarea {
+      resize: vertical;
+    }
+
+    input[type="submit"],
+    input[type="reset"] {
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      background-color: #007bff;
+      color: #fff;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover,
+    input[type="reset"]:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <div class="div1">
+    <h1>Form Tag</h1>
+    <p>
+      The &lt;form&gt; tag is an essential part of HTML that is used to create interactive forms on web pages. It is used to collect input from users, such as text inputs, checkboxes, radio buttons, and more. <br>
+      Here is an example of how the &lt;form&gt; tag is used:
+    </p>
+    <p>
+      1. The &lt;form&gt; tag is used to create a form. <br>
+      2. The action attribute specifies the URL to which the form data will be submitted when the user clicks the submit button. In this case, it points to /submit-form.php. <br>
+      3. The method attribute specifies the HTTP method to be used when submitting the form. Here, it is set to POST. <br>
+      4. Various form elements such as &lt;input&gt;, &lt;select&gt;, and &lt;textarea&gt; are used to collect different types of input from the user. <br>
+      5. Input fields have attributes like id, name, and required which help in identifying the input, providing a name for the input field, and specifying whether the input is required. <br>
+      6. The submit button (&lt;input type="submit"&gt;) is used to submit the form data, while the reset button (&lt;input type="reset"&gt;) clears all form inputs when clicked.
+    </p>
+  </div>
+  <div class="container">
+    <h1>Registration Form</h1>
+    <form action="/submit-form.php" method="POST">
+      <label for="fullname">Full Name:</label>
+      <input type="text" id="fullname" name="fullname" required>
+      <br>
+      
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      <br>
+      
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+      <br>
+      
+      <label for="birthdate">Birthdate:</label>
+      <input type="date" id="birthdate" name="birthdate">
+      <br>
+      
+      <label for="gender">Gender:</label>
+      <input type="radio" id="male" name="gender" value="male">
+      <label for="male">Male</label>
+      <input type="radio" id="female" name="gender" value="female">
+      <label for="female">Female</label>
+      <br>
+      
+      <label for="interests">Interests:</label>
+      <select id="interests" name="interests" multiple>
+        <option value="sports">Sports</option>
+        <option value="music">Music</option>
+        <option value="art">Art</option>
+        <option value="technology">Technology</option>
+      </select>
+      <br>
+      
+      <label for="comments">Comments:</label>
+      <textarea id="comments" name="comments" rows="4" cols="40"></textarea>
+      <br>
+      
+      <input type="submit" value="Submit">
+      <input type="reset" value="Reset">
+    </form>
+  </div>
+</body>
+</html>

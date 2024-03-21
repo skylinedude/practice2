@@ -1,0 +1,23 @@
+.div1{
+    /* Normal coloring */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: brown;
+   width: 200px;
+   height: 200px;
+
+}
+.div2{
+    /* RGB Coloring */
+    background-color: rgb(100, 150, 50);
+    width: 200px;
+   height: 200px;
+}
+
+.div3{
+    /* Hexadecimal coloring */
+    background-color: #704fd4;
+    width: 200px;
+   height: 200px;
+}

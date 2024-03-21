@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anchor Tag</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            padding:10px;
+            text-align: center;
+        }
+        h1{
+            color:white;
+        }
+        .container {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        h2 {
+            color: #333;
+        }
+        p {
+            margin-bottom: 1.5rem;
+        }
+        a {
+            color: #007bff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        a:hover {
+            color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Anchor Tag</h1>
+    </header>
+    <div class="container">
+        <h2>Introduction</h2>
+        <p>
+            An anchor tag, also known as an &lt;a&gt; tag in HTML, is used to create hyperlinks in web pages. It allows you to link to another web page, a specific section within the same page, an email address, a file, or any other URL.
+        </p>
+        <h2>Basic Syntax</h2>
+        <p>
+            Here is the basic syntax of an anchor tag: <br>
+            &lt;a href="URL"&gt;Link Text&lt;/a&gt;
+        </p>
+        <h2>Attributes</h2>
+        <ol>
+            <li><strong>href:</strong> This attribute specifies the URL of the page or resource you want to link to.</li>
+            <li><strong>Link Text:</strong> This is the text that will be displayed as the clickable link on the web page.</li>
+        </ol>
+        <p>
+            For example, if you want to create a link to Google's homepage, the anchor tag would look like this:
+            <br>
+            &lt;a href="https://www.google.com"&gt;Visit Google&lt;/a&gt;
+        </p>
+        <h2>Internal Links</h2>
+        <p>
+            You can also use anchor tags to create internal links within the same page or to specific sections of a page using the id attribute.
+        </p>
+        <p>
+            <a href="#section1">Go to Section 1</a>
+        </p>
+        <h2 id="section1">Section 1</h2>
+        <p>This is the content of section 1.</p>
+    </div>
+</body>
+</html>
