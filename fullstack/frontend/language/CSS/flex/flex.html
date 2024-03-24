@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .header {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+    }
+
+    .back-button {
+      display: inline-block;
+      margin: 10px;
+      padding: 5px 10px;
+      background-color: #555;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    .back-button:hover {
+      background-color: #777;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+    }
+
+    .flex-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 300px; /* Just for demonstration */
+      border: 1px solid #ccc; /* Just for demonstration */
+    }
+
+    .flex-item {
+      width: 100px;
+      height: 100px;
+      background-color: #f0f0f0;
+      margin: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: bold;
+      font-size: 24px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="header">
+    <h1>Flex Box Example</h1>
+  </div>
+  <div class="container">
+    <a href="../index/index.html" class="back-button">Back</a>
+    <div class="definition">
+      <h2>Flexbox Definition</h2>
+      <p>
+        CSS Flexbox is a layout model that allows you to design more complex and flexible layouts in CSS. It provides an efficient way to distribute space and align items within a container, whether it's a row or a column. <br><br> To use Flexbox, you need to define a flex container and then specify how its children (flex items) should behave. Here are some key concepts and properties of Flexbox: <br><br> 1. Flex Container: To create a flex container, you use the display: flex; or display: inline-flex; property on an element. This property makes the container a flex container and enables the use of Flexbox properties on its children. <br> 2. Flex Direction: The flex-direction property defines the main axis along which flex items are placed inside the flex container. It can be set to row (default), row-reverse, column, or column-reverse. <br> 3. Justify Content: This property aligns flex items along the main axis of the flex container. Common values include flex-start (default), flex-end, center, space-between, and space-around. <br> 4. Align Items: The align-items property aligns flex items along the cross axis of the flex container. It controls the vertical alignment of items when flex-direction is set to row and the horizontal alignment when flex-direction is set to column. Values can be flex-start, flex-end, center, baseline, or stretch (default). <br> 5. Flex Wrap: By default, flex items will try to fit in a single line. If you want them to wrap onto multiple lines based on available space, you can use the flex-wrap property with values like nowrap (default), wrap, or wrap-reverse. <br> 6. Flex Basis, Grow, and Shrink: These properties control how flex items grow, shrink, and initially size themselves in a flex container. flex-basis sets the initial size of an item, flex-grow determines how much it can grow relative to other items, and flex-shrink determines how much it can shrink. <br> Here's an example of a simple flex layout:
+      </p>
+      <pre>
+&lt;style&gt;
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px; /* Just for demonstration */
+  border: 1px solid #ccc; /* Just for demonstration */
+}
+
+.flex-item {
+  width: 100px;
+  height: 100px;
+  background-color: #f0f0f0;
+  margin: 10px;
+}
+&lt;/style&gt;
+      </pre>
+    </div>
+    <div class="flex-container">
+        <div class="flex-item">1</div>
+        <div class="flex-item">2</div>
+        <div class="flex-item">3</div>
+      </div>  
+</div>
+</body>
+
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Colors</title>
+  <link rel="stylesheet" href="./color.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 10px 0;
+      text-align: center;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .section {
+      margin-bottom: 30px;
+    }
+
+    .section h2 {
+      margin-bottom: 10px;
+    }
+
+    .section p {
+      margin-bottom: 20px;
+    }
+
+    .div-block {
+      width: 200px;
+      height: 200px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 5px;
+      margin-bottom: 10px;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .div-block:hover {
+      transform: scale(1.1);
+    }
+
+    .div1 {
+      color: red;
+      background-color: lightblue;
+    }
+
+    .div2 {
+      color: rgb(255, 0, 0);
+      background-color: rgb(0, 255, 0);
+    }
+
+    .div3 {
+      color: rgba(255, 0, 0, 0.5);
+      background-color: rgba(0, 255, 0, 0.3);
+    }
+
+    .div4 {
+      color: hsl(0, 100%, 50%);
+      background-color: hsla(120, 100%, 50%, 0.5);
+    }
+
+    /* Style for back button */
+    .back-btn {
+      display: inline-block;
+      padding: 10px 20px;
+      margin-bottom: 20px;
+      background-color: #333;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    .back-btn:hover {
+      background-color: #555;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>CSS Colors</h1>
+  </header>
+  <div class="container">
+    <a href="../index/index.html" class="back-btn">Back</a>
+    <div class="section">
+      <h2>Introduction to CSS Colors</h2>
+      <p>CSS (Cascading Style Sheets) supports various color formats that you can use to specify colors for text, backgrounds, borders, and other elements on a webpage.</p>
+    </div>
+    <div class="section">
+      <h2>Keyword Colors</h2>
+      <p>CSS supports a set of predefined color names like red, blue, green, black, white, etc.</p>
+      <div class="div-block div1">
+        First Div Block
+      </div>
+    </div>
+    <div class="section">
+      <h2>RGB Colors</h2>
+      <p>RGB (Red, Green, Blue) colors specify the intensity of each color component using decimal values between 0 and 255.</p>
+      <div class="div-block div2">
+        Second Div Block
+      </div>
+    </div>
+    <div class="section">
+      <h2>RGBA Colors</h2>
+      <p>RGBA colors are similar to RGB colors but include an additional alpha value (transparency).</p>
+      <div class="div-block div3">
+        Third Div Block
+      </div>
+    </div>
+    <div class="section">
+      <h2>HSL and HSLA Colors</h2>
+      <p>HSL (Hue, Saturation, Lightness) and HSLA colors allow you to specify colors based on hue, saturation, and lightness.</p>
+      <div class="div-block div4">
+        Fourth Div Block
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

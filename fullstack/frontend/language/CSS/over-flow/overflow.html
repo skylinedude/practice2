@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+h1{
+    color:red;
+    background-color: #333;
+
+}
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #f4f4f4;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        p {
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+
+        pre {
+            background-color: #f0f0f0;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+
+        .para1 {
+            width: 200px;
+            height: 200px;
+            overflow:auto;
+            display: inline-block;
+        }
+        .para2 {
+            width: 200px;
+            height: 200px;
+            overflow:scroll;
+            display: inline-block;
+            padding-left: 50px;
+        }
+        .para3 {
+            width: 200px;
+            height: 200px;
+            overflow:visible;
+        }
+        .para4 {
+            width: 200px;
+            height: 200px;
+            overflow:hidden;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Overflow in CSS</h1>
+        <p>
+            In web development, an "overflow" in CSS refers to how content that overflows its containing element is handled. When the content inside an element is larger than the dimensions specified for that element, overflow properties come into play to determine how the overflow is displayed.
+        </p>
+        <p>
+            There are several values for the CSS overflow property:
+        </p>
+        <ol>
+            <li>visible: This is the default value. Content is not clipped and may overflow the content box of the element.</li>
+            <li>hidden: Content that overflows the content box is clipped and not visible.</li>
+            <li>scroll: Scrollbars are added to the element so that users can scroll to see the overflowing content.</li>
+            <li>auto: Similar to scroll, but the browser only adds scrollbars when necessary (when content overflows).</li>
+        </ol>
+        <p>
+            Here's an example to illustrate the use of the overflow property:
+        </p>
+        <pre>
+            .para {
+                width: 200px; /* Set a fixed width for the container */
+                height: 200px; /* Set a fixed height for the container */
+                overflow: auto; /* Add scrollbars when content overflows */
+            }    
+        </pre>
+        <p class="para1">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque nesciunt tempore omnis nulla? Est voluptate labore soluta maiores cumque, ullam ratione accusantium unde voluptas quidem at voluptates obcaecati laborum debitis? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste a pariatur tenetur ducimus id aperiam dolores, excepturi sit quo laudantium fugit, dolore, consequatur iusto! Fugiat repudiandae sequi cumque placeat voluptatum.
+        </p>
+        <p class="para2">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque nesciunt tempore omnis nulla? Est voluptate labore soluta maiores cumque, ullam ratione accusantium unde voluptas quidem at voluptates obcaecati laborum debitis? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste a pariatur tenetur ducimus id aperiam dolores, excepturi sit quo laudantium fugit, dolore, consequatur iusto! Fugiat repudiandae sequi cumque placeat voluptatum.
+        </p>
+        <p class="para3">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque nesciunt tempore omnis nulla? Est voluptate labore soluta maiores cumque, ullam ratione accusantium unde voluptas quidem at voluptates obcaecati laborum debitis? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste a pariatur tenetur ducimus id aperiam dolores, excepturi sit quo laudantium fugit, dolore, consequatur iusto! Fugiat repudiandae sequi cumque placeat voluptatum.
+        </p>
+        <p class="para4">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque nesciunt tempore omnis nulla? Est voluptate labore soluta maiores cumque, ullam ratione accusantium unde voluptas quidem at voluptates obcaecati laborum debitis? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste a pariatur tenetur ducimus id aperiam dolores, excepturi sit quo laudantium fugit, dolore, consequatur iusto! Fugiat repudiandae sequi cumque placeat voluptatum.
+        </p>
+    </div>
+</body>
+</html> 
