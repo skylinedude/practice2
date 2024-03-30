@@ -4,13 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        p {
+            color: #666;
+            margin-bottom: 15px;
+        }
+
+        .inline-example {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: brown;
+            background-color:aliceblue;
+        }
+    </style>
 </head>
 <body>
-    <h1>Inline CSS</h1>
-    <p>Inline CSS refers to styling HTML elements directly within the HTML code using the style attribute. <br> This method allows you to apply specific styles to individual elements without creating a separate CSS file. <br>Here's an example of how inline CSS is used:</p>
-   
-        &lt;p style="font-family: Verdana, Geneva, Tahoma, sans-serif; color: brown;"&gt;this is inline css&lt;/p&gt;
-        <p>result: </p>
-<p style="font-family: Verdana, Geneva, Tahoma, sans-serif; color: brown;">this is inline css</p>  
+    <div class="container">
+        <h1>Inline CSS</h1>
+        <p>Inline CSS refers to styling HTML elements directly within the HTML code using the style attribute. <br> This method allows you to apply specific styles to individual elements without creating a separate CSS file. <br>Here's an example of how inline CSS is used:</p>
+<pre>
+&lt;p style="font-family: Verdana, Geneva, Tahoma, sans-serif; color: brown;  background-color:aliceblue;"&gt;this is inline css&lt;/p&gt;
+</pre>
+
+        <p>Result:</p>
+        <p class="inline-example">this is inline css</p>  
+    </div>
 </body>
 </html>

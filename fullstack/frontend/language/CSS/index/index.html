@@ -5,28 +5,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        body{
-            background-color: bisque;
-
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f6f6f6;
         }
-        h1{
-            color: brown;
-            background-color: aquamarine;
+
+        .header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 0;
             text-align: center;
         }
-        a{
-            color: red;
-            background-color: azure;
+
+        .container {
+            max-width: 980px;
+            margin: 20px auto;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+
+        h1 {
+            color: #080808;
+            text-align: center;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        a {
+            display: block;
+            padding: 10px 20px;
+            text-decoration: none;
+            color: #333;
+            background-color: #f1f1f1;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        a:hover {
+            background-color: #4CAF50;
+            color: white;
         }
     </style>
 </head>
 <body>
-    <h1>CSS Notes</h1>
-    <a href="../colors/colors.html">CSS Colors</a> <br>
-    <a href="../bg-color/bgcolor.html">Background color</a> <br>
-        <a href="../writing-css/inline.html">inline css</a> <br>
-        <a href="../writing-css/internal.html">Internal css</a> <br>
-        <a href="../writing-css/external.html">External css</a> <br>
-    
+    <div class="header">
+        <h1>CSS Notes</h1>
+    </div>
+    <div class="container">
+        <ul>
+            <li><a href="../colors/colors2.html">CSS Colors</a></li>
+            <li><a href="../bg-color/bgcolor.html">Background color</a></li>
+            <li><a href="../writing-css/inline.html">Inline CSS</a></li>
+            <li><a href="../writing-css/internal.html">Internal CSS</a></li>
+            <li><a href="../writing-css/external.html">External CSS</a></li>
+            <li><a href="../box-model/boxmodel.html">Box Model</a></li>
+            <li><a href="../flex/flex.html">Flex Box</a></li>
+            <li><a href="../border-radius/borderRadius.html">Border-Radius</a></li>
+            <li><a href="../hover/hover.html">Hover in CSS</a></li>
+            <li><a href="../over-flow/overflow.html">overflow in CSS</a></li>
+        </ul>
+    </div>
 </body>
 </html>

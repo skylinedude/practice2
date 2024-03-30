@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box Model</title>
+   <link rel="stylesheet" href="./box.css">
+</head>
+<body>
+    <div class="container">
+        <h1>CSS Box Model</h1>
+        <a href="../index/index.html" class="back-btn">Back</a>
+        <p>
+            The CSS box model is a fundamental concept in web design and layout that describes how elements are rendered on a web page. It consists of several components that define the space an element occupies and how it interacts with other elements. Understanding the box model is crucial for creating well-designed and consistent layouts in CSS.
+        </p>
+        <p>
+            The CSS box model components are as follows:
+            <ul>
+                <li>Content: This is the actual content of the element, such as text, images, or other media.</li>
+                <li>Padding: Padding is the space between the content and the element's border. It helps create space within the element and separates the content from the border.</li>
+                <li>Border: The border surrounds the padding and content of an element. It can be styled using CSS properties like border-width, border-style, and border-color.</li>
+                <li>Margin: Margins are the space outside the border of an element. They create space between the element and adjacent elements in the layout.</li>
+            </ul>
+        </p>
+        <p>Here is an illustration of the CSS box model components:</p>
+        <pre>
+            _______________________
+            |       Margin          |
+            |  ___________________  |
+            | |     Border        | |
+            | |  _______________  | |
+            | | |   Padding     | | |
+            | | |  ___________  | | |
+            | | | |  Content  | | | |
+            | | | |           | | | |
+            | | | |___________| | | |
+            | | |_______________| | |
+            | |___________________| |
+            |_______________________|
+        </pre>
+        <div class="box-model">
+            <p>For example, if you have a &lt;div&gt; element with the following CSS:</p>
+            <pre>
+                div {
+                    width: 200px;
+                    height: 100px;
+                    padding: 20px;
+                    border: 2px solid brown;
+                    margin: 10px;
+                }
+            </pre>
+            <div class="boxmodel1">
+                I'm Box-Model
+            </div>
+        </div>
+    </div>
+</body>
+</html>

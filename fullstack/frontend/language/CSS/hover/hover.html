@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Button Hover Example</title>
+<link rel="stylesheet" href="./hover.css">
+</head>
+<body>
+    <div class="container">
+<h1>Hover in CSS</h1>
+<p>
+    In CSS (Cascading Style Sheets), the :hover pseudo-class is used to apply styles to an element when a user hovers their mouse cursor over it. This is commonly used to provide visual feedback to users and enhance the interactive experience of a website or web application. <br>
+<br>
+Here's an example of how you can use the :hover pseudo-class in CSS: <br>
+<pre>
+<strong>CSS code</strong>
+.button {
+    background-color: #4CAF50;
+    border-radius: 5px;
+    box-shadow: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+<strong>Styles applied when hovering over the button</strong> 
+.button:hover {
+  background-color: #45a049; // Dark green
+  transform: translateX(20px);
+}
+</pre>
+</p>
+<button class="button">Hover Over Me</button>
+</div>
+</body>
+</html>

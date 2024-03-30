@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./border-radius.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Border-radius in CSS</h1>
+    <p>
+      In CSS, the border-radius property is used to create rounded corners for an element's border. It allows you to control the curvature of each corner individually or all corners together. The border-radius property can take one or two values, which represent the horizontal and vertical radii of the border corners, respectively.
+    </p>
+    <p>
+      Here's how you can use it:
+    </p>
+    <pre>
+      <code>
+        .border-rounded {
+          border-radius: 50px;
+        }
+
+        .border-rounded-separate {
+          border-radius: 20px 50px;
+        }
+
+        .border-rounded-individual {
+          border-radius: 15px 70px 20px 50px;
+        }
+      </code>
+    </pre>
+    <div class="example">
+      <h2>Example:</h2>
+      <div class="border-rounded">
+        <strong>border-rounded</strong>
+      </div>
+      <div class="border-rounded-separate">
+        <strong>border-rounded-separate</strong>
+      </div>
+      <div class="border-rounded-individual">
+        <strong>border-rounded-individual</strong>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
