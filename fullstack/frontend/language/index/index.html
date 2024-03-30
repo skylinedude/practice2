@@ -4,19 +4,97 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SKYLINE SKOOL</title>
+    <style>
+        /* Resetting default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Header styles */
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Navigation styles */
+        nav {
+            display: flex;
+            justify-content: center;
+            margin-top: 1rem;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            background-color: #fff;
+            border: 2px solid #333;
+            padding: 0.5rem 1rem;
+            margin: 0 0.5rem;
+            border-radius: 30px;
+            transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #333;
+            color: #fff;
+            transform: translateY(-3px);
+        }
+
+        /* Container styles */
+        .container {
+            max-width: 960px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+            text-align: center;
+        }
+
+        .container h2 {
+            margin-bottom: 1.5rem;
+            font-size: 1.5rem;
+            color: #333;
+        }
+
+        /* Footer styles */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+    </style>
 </head>
 <body>
-    <div>
+    <header>
         <h1>SKYLINE SKOOL</h1>
-    </div>
-    <div>
-        <a href="./html/Index/index.html">HTML notes</a>
-    </div>
-    <div>
-        <a href="">CSS notes</a>
-    </div>
-    <div>
+    </header>
+    <nav>
+        <a href="../HTML/index/index.html">HTML notes</a>
+        <a href="../CSS/index/index.html">CSS notes</a>
         <a href="">JavaScript notes</a>
+    </nav>
+    <div class="container">
+        <h2>Welcome to SKYLINE SKOOL</h2>
+        <p>Explore our notes on HTML, CSS, and JavaScript to enhance your skills.</p>
     </div>
+    <footer>
+        &copy; 2024 SKYLINE SKOOL
+    </footer>
 </body>
 </html>
