@@ -1,0 +1,14 @@
+<script>
+    const array = [2, 2, 3, 3, 4, 4, 5, 5,6];
+
+const newArray = array.reduce((i,j) => {
+  if (!i.includes(j)) {
+    i.push(j);
+  }
+  return i;
+}, []);
+
+document.write(newArray)
+console.log(newArray)
+
+</script>
