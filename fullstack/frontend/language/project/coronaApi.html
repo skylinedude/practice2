@@ -1,0 +1,7 @@
+<script>
+    async function apiCaller(){
+         let api=fetch('https://data.covid19india.org/data.json')
+         console.log(await (await api).json())
+     }
+   apiCaller()
+ </script>
