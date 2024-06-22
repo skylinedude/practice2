@@ -1,0 +1,11 @@
+<script>
+function outerfunction() {
+  let a="outer"
+  function insidefunction(){
+    console.log(a)
+  }
+  return insidefunction
+}
+outerfunction()
+</script>
+
